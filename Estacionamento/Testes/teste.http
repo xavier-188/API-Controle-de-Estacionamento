@@ -1,0 +1,27 @@
+### Raiz
+GET http://localhost:5147/
+
+### Cadastrar Carro
+POST http://localhost:5147/api/estacionamento/registrar
+Content-Type: application/json
+
+{
+    "Modelo" : "Mustang",
+    "Placa" : "FER-2561"
+}
+
+### Listar Carros
+GET http://localhost:5147/api/estacionamento/listar
+
+### Sair
+PUT http://localhost:5147/api/estacionamento/b1b28cfe-e2f0-46ba-92dc-981ed8db9899/saida
+
+### Remover Carro
+DELETE http://localhost:5147/api/estacionamento/remover/9ecee7f2-19b9-4a03-b634-e91468475d74
+
+### Listar Estacionados
+GET http://localhost:5147/api/estacionamento/estacionados
+
+### Buscar por placa
+GET http://localhost:5147/api/estacionamento/buscar/FER-2561
+
